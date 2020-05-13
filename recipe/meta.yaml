@@ -1,20 +1,20 @@
 {% set name = "termgraph" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 3ea73b7659faec1a420ed3515d0b67e1bd7cb915f36f2016c4e524926d3eb0ae
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7eba587e77fcf1103f61ba948ba0f36c12c42eab55eba38e32c8f5c3d67a9243
 
 build:
   number: 0
   noarch: python
   entry_points:
     - termgraph=termgraph.termgraph:main
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,11 +31,11 @@ test:
     - termgraph --help
 
 about:
-  home: "https://github.com/mkaz/termgraph"
+  home: https://github.com/mkaz/termgraph
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "a python command-line tool which draws basic graphs in the terminal"
+  summary: a python command-line tool which draws basic graphs in the terminal
 
 extra:
   recipe-maintainers:
