@@ -1,5 +1,5 @@
 {% set name = "termgraph" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: da333709e55ab46617d0d1d4b13b63e72ea2c937233f6b54648c4c38bfca6520
+  sha256: 2f73b692545bb81bef6c8e00ae9742cb6be65e900c148bb4a9883e8eaf25209d
 
 build:
   number: 0
