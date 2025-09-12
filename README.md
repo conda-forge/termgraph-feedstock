@@ -7,7 +7,7 @@ Home: https://github.com/mkaz/termgraph
 
 Package license: MIT
 
-Summary: a python command-line tool which draws basic graphs in the terminal
+Summary: A python command-line tool which draws basic graphs in the terminal
 
 Current build status
 ====================
