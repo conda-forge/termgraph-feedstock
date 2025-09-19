@@ -1,5 +1,5 @@
 context:
-  version: "0.7.2"
+  version: "0.7.3"
 
 package:
   name: termgraph
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/t/termgraph/termgraph-${{ version }}.tar.gz
-    sha256: 8bda932a1e3e121e9a3b5f3f267c85ca7c344fdbc60883e340509bc4af2bc4ee
+    sha256: c82818120f1ede390fa5eb431180d42447e7947c62f8a21990eedd75039a05cd
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -24,10 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - colorama >=0.4.0
-    - pytest >=7.4.4
-    - twine >=4.0.2
-    - python-build >=1.1.1
+    - colorama >=0.4.6
 
 tests:
   - python:
