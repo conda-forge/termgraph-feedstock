@@ -1,5 +1,5 @@
 context:
-  version: "0.7.3"
+  version: "0.7.4"
 
 package:
   name: termgraph
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/t/termgraph/termgraph-${{ version }}.tar.gz
-    sha256: c82818120f1ede390fa5eb431180d42447e7947c62f8a21990eedd75039a05cd
+    sha256: 86a12d8c3f75ff320df1504bf6b7e7374fcbe32f05172e1c0ff38f731c9aac24
 
 build:
   script: ${{ PYTHON }} -m pip install .
